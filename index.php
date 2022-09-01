@@ -150,7 +150,7 @@ if(isset($_POST['submit'])){
       }
 
       .form-container form .form-btn:hover {
-         background: crimson;
+         background: #333;
          color: #fff;
       }
 

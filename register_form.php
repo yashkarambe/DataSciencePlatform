@@ -90,16 +90,6 @@ if(isset($_POST['submit'])){
          border-collapse: collapse;
       }
 
-      .toppane {
-         width: available;
-         height: 30%;
-         border-collapse: collapse;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background: #252839;
-      }
-
 
 
       .form-container {
@@ -116,20 +106,20 @@ if(isset($_POST['submit'])){
          padding: 20px;
          border-radius: 5px;
          box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-         background: #fff;
+         /* background: #fff; */
          text-align: center;
          width: 500px;
          margin: auto;
         -moz-text-decoration-style: dotted;
         position: relative;
-        box-shadow: 25px 30px 45px  0px rgba(105, 234, 12, 0.9074),0px 5px 30px 15px #ff7e0d;
+        /* box-shadow: 25px 30px 45px  0px rgba(105, 234, 12, 0.9074),0px 5px 30px 15px #ff7e0d; */
       }
 
       .form-container form h3 {
          font-size: 30px;
          text-transform: uppercase;
          margin-bottom: 10px;
-         color: #333;
+         color: #fff;
       }
 
       .form-container form input,
@@ -148,21 +138,21 @@ if(isset($_POST['submit'])){
 
       .form-container form .form-btn {
          background: #fbd0d9;
-         color: crimson;
+         color: #333;
          text-transform: capitalize;
          font-size: 20px;
          cursor: pointer;
       }
 
       .form-container form .form-btn:hover {
-         background: crimson;
+         background: #333;
          color: #fff;
       }
 
       .form-container form p {
          margin-top: 10px;
          font-size: 20px;
-         color: #333;
+         color: rgba(255, 255, 255, 0.886);
       }
 
       .form-container form p a {
@@ -180,38 +170,6 @@ if(isset($_POST['submit'])){
       }
 
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-      .toppane {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         font-family: 'Poppins', sans-serif;
-
-      }
-
-      .toppane h2 {
-         position: relative;
-         font-size: 11vw;
-         color: #252839;
-         -webkit-text-stroke: 0.3vw #383d52;
-         text-transform: uppercase;
-
-      }
-
-      .toppane h2::before {
-         content: attr(data-text);
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         color: #75e916;
-         -webkit-text-stroke: 0.3vw #383d52;
-         border-right: 2px solid #75e916;
-         overflow: hidden;
-         animation: animate 6s linear infinite;
-
-      }
 
       @keyframes animate {
 
@@ -246,17 +204,17 @@ if(isset($_POST['submit'])){
 
    <div class="container">
       <div class="toppane">
-         <h2 data-text="Query...">Query...</h2><br>
+         <!-- <h2 data-text="Query...">Query...</h2><br> -->
       </div>
 
       <div class="middlepane" id="videoDiv2">
          <video id="video2" preload="" autoplay="" muted="" playsinline="" loop="">
-            <source src="register Video.mp4" type="video/mp4">
+            <source src="login Videos.mp4" type="video/mp4">
          </video>
          <div class="form-container" id="form">
 
             <form action="" method="post">
-               <h3>register now</h3>
+               <h3>register in Query</h3>
                <?php
                   if(isset($error)){
                   foreach($error as $error){
